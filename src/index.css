@@ -35,9 +35,16 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+html {
+	scroll-behavior: smooth;
+}
 :root {
 	--blk-clr: #000000;
 	--cyan-clr: #75ded7;
 	--white: #ffffff;
 	--blk-op: 000, 000, 000;
+}
+a {
+	text-decoration: none;
+	color: var(--white);
 }

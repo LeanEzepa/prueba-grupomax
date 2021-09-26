@@ -3,7 +3,7 @@ import classes from './Productos.module.css';
 
 function Productos() {
 	return (
-		<section className={classes.productos}>
+		<section id="productos" className={classes.productos}>
 			<div className={classes.prodCards}>
 				<div className={classes.categorias}>
 					<div className={classes.catImg}>

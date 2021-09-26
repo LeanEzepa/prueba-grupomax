@@ -25,16 +25,16 @@ function Contacto(props) {
 			consulta  : enteredConsulta
 		};
 		props.onFormSubmit(data);
-		nameInputRef = '';
-		emailInputRef = '';
-		telInputRef = '';
-		provInputRef = '';
-		hrInputRef = '';
-		consultaInputRef = '';
+		nameInputRef.current.value.reset();
+		emailInputRef.current.value.reset();
+		telInputRef.current.value.reset();
+		provInputRef.current.value.reset();
+		hrInputRef.current.value.reset();
+		consultaInputRef.current.value.reset();
 	}
 
 	return (
-		<section className={classes.contacto}>
+		<section id="contacto" className={classes.contacto}>
 			<div className={classes.ct}>
 				<div className={[ classes.ct_col, classes.ctForm ].join(' ')}>
 					<h1>Formulario</h1>

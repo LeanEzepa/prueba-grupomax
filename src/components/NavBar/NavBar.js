@@ -3,7 +3,7 @@ import Navigation from './Navigation';
 import MobileNav from './MobileNavigation';
 const NavBar = () => {
 	return (
-		<nav>
+		<nav id="inicio">
 			<Navigation />
 			<MobileNav />
 		</nav>
