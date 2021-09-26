@@ -1,0 +1,108 @@
+@media screen and (min-width: 320px) {
+	.MobileNav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: column;
+		padding: 1rem;
+		gap: 1rem;
+		width: 100%;
+		background: var(--blk-clr);
+	}
+	.menu {
+		color: var(--white);
+		font-family: Barlow;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	.menu li {
+		margin: 20px 0;
+	}
+	.topBar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.Burguer,
+	.change {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: right;
+		cursor: pointer;
+	}
+	.bar1,
+	.bar2,
+	.bar3 {
+		width: 35px;
+		height: 3px;
+		background-color: var(--white);
+		margin: 4px 0;
+		transition: 0.3s;
+		border-radius: 3px;
+	}
+	.bar1 {
+		width: 20px;
+	}
+	.bar3 {
+		width: 30px;
+	}
+
+	.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+		transform: rotate(-45deg) translate(-9px, 6px);
+		width: 35px;
+	}
+
+	.change .bar2 {
+		opacity: 0;
+	}
+
+	.change .bar3 {
+		-webkit-transform: rotate(45deg) translate(-8px, -8px);
+		transform: rotate(45deg) translate(-8px, -8px);
+		width: 35px;
+	}
+	.Navigation {
+		display: none;
+	}
+	.logo {
+		height: 30px;
+		width: 90px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.MobileNav {
+		display: none;
+	}
+	.Navigation {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: row;
+		background: var(--blk-clr);
+		padding: 1.2rem 1.2rem 1.2rem 5rem;
+	}
+	.menu {
+		color: var(--white);
+		font-family: Barlow;
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 45%;
+		font-size: 1.2rem;
+		font-weight: 400;
+		flex-direction: row;
+	}
+	.menu li {
+		cursor: pointer;
+	}
+	.logo {
+		height: 3rem;
+		width: auto;
+	}
+}

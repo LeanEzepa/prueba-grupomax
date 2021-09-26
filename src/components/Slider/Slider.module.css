@@ -1,0 +1,52 @@
+@media screen and (min-width: 320px) {
+	.slider {
+		width: 100%;
+		height: 150px;
+		position: relative;
+	}
+	.slider img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: left;
+	}
+	.slider div {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		color: var(--white);
+		width: 100%;
+	}
+	.slider h4 {
+		font-family: Barlow;
+		font-size: 1.2rem;
+		font-weight: 300;
+	}
+	.slider h1 {
+		font-family: Barlow;
+		font-weight: 400;
+		font-size: 2.5rem;
+	}
+}
+@media screen and (min-width: 768px) {
+	.slider {
+		height: auto;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.slider h4 {
+		font-family: Barlow;
+		font-size: 3rem;
+		font-weight: 200;
+	}
+	.slider h1 {
+		font-family: Barlow;
+		font-weight: 400;
+		font-size: 5rem;
+	}
+}

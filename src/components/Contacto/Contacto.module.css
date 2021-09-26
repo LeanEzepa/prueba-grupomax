@@ -1,0 +1,257 @@
+@media screen and (min-width: 320px) {
+	.contacto {
+		background: var(--blk-clr);
+		width: 100%;
+	}
+	.ct {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 1rem;
+	}
+	.ct_col {
+		color: var(--white);
+		width: 100%;
+		margin: 30px 0;
+	}
+	.ct_col h1 {
+		font-family: Garamond;
+		font-size: 2.5rem;
+		font-weight: normal;
+	}
+	.medios {
+		display: flex;
+		flex-direction: column;
+		padding-top: 1rem;
+	}
+	.medios div {
+		margin: 15px 0;
+		font-size: 1rem;
+		font-family: Barlow;
+		font-weight: 500;
+	}
+	.medios i {
+		color: var(--cyan-clr);
+		margin-right: 10px;
+		font-size: 1.5rem;
+	}
+	.horarios {
+		padding-top: 1.5rem;
+		font-family: Barlow;
+		font-weight: 500;
+		font-size: 1rem;
+	}
+	.form {
+		display: flex;
+		flex-direction: column;
+	}
+	.formDiv {
+		display: flex;
+		flex-direction: column;
+	}
+	.formDiv div {
+		display: flex;
+		flex-direction: column;
+		margin: 15px 0;
+	}
+	.formDiv label {
+		font-family: Barlow;
+		font-weight: 500;
+	}
+	.formDiv input,
+	.formDiv select {
+		padding: 10px 10px;
+		background: var(--blk-clr);
+		border: none;
+		border-bottom: 1px solid var(--cyan-clr);
+		color: var(--white);
+		font-size: 1rem;
+	}
+	.formDiv input:-webkit-autofill,
+	.formDiv input:-webkit-autofill:hover,
+	.formDiv input:-webkit-autofill:focus,
+	.formDiv input:-webkit-autofill:active {
+		-webkit-animation: autofill 0s forwards;
+		animation: autofill 0s forwards;
+	}
+
+	@keyframes autofill {
+		100% {
+			background: var(--blk-clr);
+			color: inherit;
+		}
+	}
+
+	@-webkit-keyframes autofill {
+		100% {
+			background: var(--blk-clr);
+			color: inherit;
+		}
+	}
+	.formDiv input:valid,
+	.formDiv select:valid {
+		background: var(--blk-clr);
+	}
+	.formDiv input:focus,
+	.formDiv select:focus {
+		outline: none;
+	}
+	.formDiv select {
+		appearance: none;
+	}
+	.formDiv .FA {
+		position: relative;
+	}
+	.formDiv .FA:before {
+		content: '\f078';
+		width: 30px;
+		height: 30px;
+		display: flex;
+		position: absolute;
+		font-weight: 900;
+		top: 55%;
+		right: -10px;
+		font-family: "Font Awesome 5 Free";
+		background: none;
+		color: var(--cyan-clr);
+	}
+	.formBtn {
+		width: 100%;
+		display: flex;
+	}
+	.enviar {
+		align-self: center;
+		padding: 0.5rem 1.5rem;
+		border-radius: 5px;
+		background: var(--cyan-clr);
+		border: none;
+		color: var(--white);
+		font-size: 1.2rem;
+		font-family: Barlow;
+		font-weight: 300;
+		outline: none;
+	}
+	.enviar:hover {
+		cursor: pointer;
+	}
+	.enviar:focus {
+		outline: none;
+	}
+}
+@media screen and (min-width: 768px) {
+	.ct {
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-template-areas: "a a" "a a" "b c";
+		padding: 2rem 3rem 2rem 6rem;
+	}
+	.ct_col {
+		margin: 0;
+	}
+	.ct_col:nth-child(1) {
+		grid-area: a;
+		margin-bottom: 30px;
+	}
+	.ct_col:nth-child(2) {
+		grid-area: b;
+	}
+	.ct_col:nth-child(3) {
+		grid-area: c;
+	}
+	.form {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.formDiv {
+		width: 45%;
+		margin: 1rem;
+		margin-left: 0;
+	}
+	.formBtn {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding-right: 3rem;
+	}
+	.enviar {
+		font-size: 1.2rem;
+		align-self: flex-end;
+	}
+	.medios div {
+		font-size: 1.2rem;
+	}
+	.horarios {
+		font-size: 1.2rem;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.ct {
+		grid-template-areas: "a a b c";
+		padding: 2rem 6rem;
+	}
+	.form {
+		display: grid;
+		grid-template-areas: "a b" "c d";
+	}
+	.formDiv:nth-child(1) {
+		grid-area: a;
+		width: 85%;
+	}
+	.formDiv:nth-child(2) {
+		grid-area: b;
+		width: 85%;
+	}
+	.formBtn {
+		grid-area: d;
+		width: 85%;
+		padding-right: 0;
+	}
+	.formDiv select option:hover {
+		box-shadow: 0 0 10px 100px var(--cyan-clr) inset;
+	}
+	.ct_col {
+		width: auto;
+		margin: 0;
+	}
+}
+@media screen and (min-width: 1920px) {
+	.ct {
+		padding: 2rem 8rem;
+	}
+	.medios i {
+		font-size: 1.2rem;
+	}
+	.form {
+		display: grid;
+		grid-template-areas: "a b" "c d";
+	}
+	.ct_col:nth-child(2) {
+		padding-left: 5rem;
+	}
+	.formDiv {
+		width: 100%;
+		margin: 0;
+	}
+	.formDiv:nth-child(1) {
+		grid-area: a;
+		width: 85%;
+	}
+	.formDiv:nth-child(2) {
+		grid-area: b;
+		width: 85%;
+	}
+	.formDiv label {
+		font-family: Barlow;
+		font-weight: 500;
+		font-size: 1.3rem;
+	}
+	.formBtn {
+		grid-area: d;
+		width: 85%;
+		padding-right: 0;
+	}
+	.enviar {
+		font-size: 1.5rem;
+	}
+}
